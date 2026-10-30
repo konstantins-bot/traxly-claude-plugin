@@ -1,0 +1,8 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [{ "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s work\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }],
+    "PreToolUse": [{ "matcher": "*", "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s work\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }],
+    "Notification": [{ "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s wait\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }],
+    "Stop": [{ "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s done\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }]
+  }
+}
