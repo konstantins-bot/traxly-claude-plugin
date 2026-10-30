@@ -11,6 +11,7 @@
     {
       "name": "traxly",
       "source": "./traxly",
+      "version": "1.0.2",
       "description": "Your AI teammate in the Traxly office: a desk robot that shows your team when Claude works and when it waits for you."
     }
   ]

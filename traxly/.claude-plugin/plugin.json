@@ -1,6 +1,6 @@
 {
   "name": "traxly",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Your AI teammate in the Traxly office: a little robot on your desk shows the team when Claude works, finishes or waits for you. Only «work / wait / done» leaves Claude Code — never a prompt, an answer or a file.",
   "author": {
     "name": "Traxly",
