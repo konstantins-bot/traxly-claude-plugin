@@ -1,0 +1,17 @@
+{
+  "name": "traxly",
+  "owner": {
+    "name": "Traxly",
+    "email": "hello@traxly.pro"
+  },
+  "metadata": {
+    "description": "Traxly: the 3D office for teams and their AI. Plugins that bring your AI tools into the office."
+  },
+  "plugins": [
+    {
+      "name": "traxly",
+      "source": "./traxly",
+      "description": "Your AI teammate in the Traxly office: a desk robot that shows your team when Claude works and when it waits for you."
+    }
+  ]
+}
