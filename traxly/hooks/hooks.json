@@ -1,8 +1,45 @@
 {
   "hooks": {
-    "UserPromptSubmit": [{ "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s work\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }],
-    "PreToolUse": [{ "matcher": "*", "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s work\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }],
-    "Notification": [{ "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s wait\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }],
-    "Stop": [{ "hooks": [{ "type": "command", "command": "sh -c 'd=\"$HOME/.traxly\"; mkdir -p \"$d\"; printf \"%s done\\n\" \"$(date +%s)\" >> \"$d/ai-events.log\"' # traxly-ai-event" }] }]
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/ai-event.sh\" work"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/ai-event.sh\" work"
+          }
+        ]
+      }
+    ],
+    "Notification": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/ai-event.sh\" wait"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "sh \"${CLAUDE_PLUGIN_ROOT}/scripts/ai-event.sh\" done"
+          }
+        ]
+      }
+    ]
   }
 }

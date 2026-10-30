@@ -1,8 +1,20 @@
 {
   "name": "traxly",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your AI teammate in the Traxly office: a little robot on your desk shows the team when Claude works, finishes or waits for you. Only «work / wait / done» leaves Claude Code — never a prompt, an answer or a file.",
-  "author": { "name": "Traxly", "email": "hello@traxly.pro", "url": "https://traxly.pro" },
+  "author": {
+    "name": "Traxly",
+    "email": "hello@traxly.pro",
+    "url": "https://traxly.pro"
+  },
   "homepage": "https://traxly.pro/en/ai-teams",
-  "keywords": ["office", "team", "presence", "status", "remote"]
+  "keywords": [
+    "office",
+    "team",
+    "presence",
+    "status",
+    "remote"
+  ],
+  "repository": "https://github.com/konstantins-bot/traxly-claude-plugin",
+  "license": "MIT"
 }
